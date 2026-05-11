@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impacto Ambiental de la Tecnología</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#e8f5e9;
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#1b5e20,#43a047);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:30px 0;
+}
+
+.card{
+    background:white;
+    margin-bottom:25px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+    animation:aparecer 1s ease;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#1b5e20;
+    margin-bottom:15px;
+}
+
+button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:15px;
+    transition:0.3s;
+    font-size:16px;
+}
+
+button:hover{
+    background:#1b5e20;
+    transform:scale(1.05);
+}
+
+.extra{
+    display:none;
+    margin-top:20px;
+    background:#f1f8e9;
+    padding:15px;
+    border-radius:10px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+img{
+    width:100%;
+    border-radius:15px;
+    margin-top:20px;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:30px;
+}
+
+.progress-container{
+    width:100%;
+    background:#ccc;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:20px;
+}
+
+.progress-bar{
+    width:0%;
+    height:25px;
+    background:#43a047;
+    text-align:center;
+    color:white;
+    line-height:25px;
+    transition:1s;
+}
+
+.quiz{
+    margin-top:20px;
+    background:#f1f8e9;
+    padding:15px;
+    border-radius:10px;
+}
+
+.quiz button{
+    margin:10px;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+marquee{
+    background:#1b5e20;
+    color:white;
+    padding:10px;
+    font-weight:bold;
+}
+
+hr{
+    margin:20px 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<marquee>
+🌍 Reduce tu contaminación digital • Recicla electrónicos • Usa responsablemente la tecnología 🌱
+</marquee>
+
+<header>
+    <h1>🌎 Impacto Ambiental de la Tecnología</h1>
+    <p>
+        Proyecto interactivo sobre el lado oculto de la tecnología
+    </p>
+</header>
+
+<div class="container">
+
+<!-- 1 -->
+
+<div class="card">
+
+<h2>🌍 1. La Huella Ambiental de lo Digital</h2>
+
+<p>
+La tecnología digital parece limpia porque no produce humo visible,
+pero detrás del internet existen enormes centros de datos,
+servidores y fábricas que consumen muchísima energía.
+</p>
+
+<button onclick="mostrarInfo('huella')">
+Ver información completa
+</button>
+
+<div class="extra" id="huella">
+
+<h3>💻 ¿Qué es la huella de carbono digital?</h3>
+
+<p>
+Es la contaminación que se produce por el uso de internet,
+redes sociales, videojuegos, plataformas de streaming y dispositivos electrónicos.
+</p>
+
+<ul>
+<li>📶 Internet consume electricidad las 24 horas.</li>
+<li>🎬 Ver videos en streaming aumenta el consumo energético.</li>
+<li>📱 Las redes sociales requieren millones de servidores.</li>
+<li>📧 Los correos electrónicos también generan CO₂.</li>
+<li>🎮 Los videojuegos online usan mucha energía.</li>
+</ul>
+
+<h3>⚡ Consumo energético digital</h3>
+
+<ul>
+<li>🌐 Internet mundial = gran gasto eléctrico.</li>
+<li>📺 Streaming HD consume más datos y energía.</li>
+<li>📞 Videollamadas requieren transmisión constante.</li>
+<li>☁️ La nube digital usa servidores reales.</li>
+</ul>
+
+<div class="quiz">
+
+<p><strong>❓ ¿Qué contamina más?</strong></p>
+
+<button onclick="alert('✅ Correcto. Ver videos en streaming consume más energía.')">
+Streaming de video
+</button>
+
+<button onclick="alert('❌ Incorrecto. Un mensaje consume menos energía.')">
+Enviar un mensaje
+</button>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+
+</div>
+</div>
+
+<!-- 2 -->
+
+<div class="card">
+
+<h2>🏢 2. Centros de Datos (Data Centers)</h2>
+
+<p>
+Los centros de datos son considerados el “cerebro invisible del internet”.
+</p>
+
+<button onclick="mostrarInfo('data')">
+Descubrir más
+</button>
+
+<div class="extra" id="data">
+
+<h3>🧠 ¿Qué son los data centers?</h3>
+
+<p>
+Son edificios gigantes llenos de computadoras y servidores
+que almacenan información de redes sociales, aplicaciones,
+videos y páginas web.
+</p>
+
+<ul>
+<li>📸 Guardan fotos y videos.</li>
+<li>📱 Mantienen funcionando apps y redes sociales.</li>
+<li>🎥 Permiten usar plataformas de streaming.</li>
+<li>☁️ Almacenan archivos en la nube.</li>
+</ul>
+
+<h3>⚡ Consumo de recursos</h3>
+
+<ul>
+<li>💡 Gastan enormes cantidades de electricidad.</li>
+<li>💧 Utilizan agua para refrigeración.</li>
+<li>🔥 Algunos usan combustibles fósiles.</li>
+<li>🌱 Otros utilizan energías renovables.</li>
+</ul>
+
+<div class="progress-container">
+<div class="progress-bar" id="barra">
+80%
+</div>
+</div>
+
+<button onclick="llenarBarra()">
+Mostrar consumo energético
+</button>
+
+<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31">
+
+</div>
+</div>
+
+<!-- 3 -->
+
+<div class="card">
+
+<h2>📱 3. Producción de Dispositivos Tecnológicos</h2>
+
+<p>
+Detrás de cada celular o computadora existe un gran impacto ambiental.
+</p>
+
+<button onclick="mostrarInfo('produccion')">
+Ver proceso de fabricación
+</button>
+
+<div class="extra" id="produccion">
+
+<h3>⛏️ Extracción de minerales</h3>
+
+<ul>
+<li>🔋 Litio</li>
+<li>⚙️ Cobalto</li>
+<li>🪨 Tierras raras</li>
+<li>🔌 Cobre</li>
+</ul>
+
+<h3>🌳 Impactos ambientales</h3>
+
+<ul>
+<li>Deforestación.</li>
+<li>Contaminación del agua.</li>
+<li>Daño al suelo.</li>
+<li>Destrucción de ecosistemas.</li>
+</ul>
+
+<h3>👥 Impacto social</h3>
+
+<p>
+En algunos países productores existen malas condiciones laborales
+y explotación de trabajadores.
+</p>
+
+<button onclick="alert('📱 La fabricación de un celular puede contaminar más que usarlo varios años.')">
+Dato importante
+</button>
+
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+
+</div>
+</div>
+
+<!-- 4 -->
+
+<div class="card">
+
+<h2>🌱 4. Nuestro Rol como Usuarios</h2>
+
+<p>
+Como estudiantes y ciudadanos digitales podemos reducir el impacto ambiental.
+</p>
+
+<button onclick="mostrarInfo('usuarios')">
+Ver soluciones
+</button>
+
+<div class="extra" id="usuarios">
+
+<h3>✅ Buenas prácticas digitales</h3>
+
+<ul>
+<li>📂 Reducir archivos innecesarios.</li>
+<li>📧 Eliminar correos que no sirven.</li>
+<li>📱 Alargar la vida de los dispositivos.</li>
+<li>♻️ Reciclar electrónicos.</li>
+<li>💻 Apagar aparatos que no se usan.</li>
+<li>🌙 Usar modo oscuro para ahorrar batería.</li>
+</ul>
+
+<h3>🏫 Propuestas para la escuela</h3>
+
+<ul>
+<li>Campañas de reciclaje electrónico.</li>
+<li>Concientización ambiental.</li>
+<li>Uso responsable de internet.</li>
+<li>Reutilización de dispositivos.</li>
+</ul>
+
+<div class="quiz">
+
+<p><strong>❓ ¿Qué acción ayuda más al planeta?</strong></p>
+
+<button onclick="alert('✅ Correcto. Reciclar electrónicos reduce contaminación.')">
+Reciclar electrónicos
+</button>
+
+<button onclick="alert('❌ Incorrecto. Tirarlos a la basura contamina.')">
+Tirarlos a la basura
+</button>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1">
+
+</div>
+</div>
+
+<!-- QUIZ FINAL -->
+
+<div class="card">
+
+<h2>🧠 Quiz Final sobre Tecnología y Medio Ambiente</h2>
+
+<p>
+Responde las siguientes preguntas para poner a prueba tus conocimientos
+sobre el impacto ambiental de la tecnología.
+</p>
+
+<div class="quiz">
+
+<h3>1. ¿Qué consume más energía?</h3>
+
+<button onclick="respuestaCorrecta()">
+🎬 Ver videos en streaming
+</button>
+
+<button onclick="respuestaIncorrecta()">
+💬 Leer un mensaje
+</button>
+
+<hr>
+
+<h3>2. ¿Qué contienen muchos dispositivos electrónicos?</h3>
+
+<button onclick="respuestaCorrecta()">
+⛏️ Minerales y metales
+</button>
+
+<button onclick="respuestaIncorrecta()">
+🪵 Solo madera
+</button>
+
+<hr>
+
+<h3>3. ¿Qué ayuda más al medio ambiente?</h3>
+
+<button onclick="respuestaCorrecta()">
+♻️ Reciclar electrónicos
+</button>
+
+<button onclick="respuestaIncorrecta()">
+🗑️ Tirarlos a la basura
+</button>
+
+<hr>
+
+<h3>4. ¿Qué usan los centros de datos para enfriarse?</h3>
+
+<button onclick="respuestaCorrecta()">
+💧 Agua
+</button>
+
+<button onclick="respuestaIncorrecta()">
+🔥 Fuego
+</button>
+
+<hr>
+
+<h3>5. ¿Qué acción reduce la contaminación digital?</h3>
+
+<button onclick="respuestaCorrecta()">
+📂 Eliminar archivos innecesarios
+</button>
+
+<button onclick="respuestaIncorrecta()">
+📱 Comprar celulares cada mes
+</button>
+
+<hr>
+
+<button onclick="mostrarResultado()">
+📊 Ver resultado final
+</button>
+
+<h3 id="resultadoQuiz"></h3>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h2>🌎 “La tecnología puede ayudar al planeta, pero depende de cómo la usemos.”</h2>
+
+<p>
+Proyecto escolar interactivo sobre tecnología y sostenibilidad.
+</p>
+
+</footer>
+
+<script>
+
+function mostrarInfo(id){
+
+let elemento = document.getElementById(id);
+
+if(elemento.style.display === "block"){
+    elemento.style.display = "none";
+}else{
+    elemento.style.display = "block";
+}
+
+}
+
+function llenarBarra(){
+
+document.getElementById("barra").style.width = "80%";
+
+}
+
+let puntos = 0;
+
+function respuestaCorrecta(){
+    puntos++;
+    alert("✅ Correcto");
+}
+
+function respuestaIncorrecta(){
+    alert("❌ Incorrecto");
+}
+
+function mostrarResultado(){
+
+document.getElementById("resultadoQuiz").innerHTML =
+"🌍 Obtuviste " + puntos + " puntos en el quiz.";
+
+}
+
+</script>
+
+</body>
+</html>
